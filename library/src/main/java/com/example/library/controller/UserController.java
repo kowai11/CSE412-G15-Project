@@ -66,13 +66,17 @@ public class UserController {
     public Res getBorrow(String accountnumber){
         Integer idByAccount = userMapper.getIdByAccount(accountnumber);
         List<Borrow> borrowBooks = userMapper.getBorrowBooks(idByAccount);
-        List<BorrowVO> collect = borrowBooks.stream().map((a) -> {
-            BorrowVO borrowVO = new BorrowVO();
-            borrowVO.setBorrowtime(a.getBorrowtime());
-            borrowVO.setReturntime(a.getReturntime());
-            borrowVO.setBook(bookMapper.getBookById(a.getIsbn()));
-            return borrowVO;
+        List<Book> collect1 = borrowBooks.stream().map((a) -> {
+            return bookMapper.getBookById(a.getIsbn());
         }).collect(Collectors.toList());
-        return Res.okRes("success",collect);
+
+//        List<BorrowVO> collect = borrowBooks.stream().map((a) -> {
+//            BorrowVO borrowVO = new BorrowVO();
+//            borrowVO.setBorrowtime(a.getBorrowtime());
+//            borrowVO.setReturntime(a.getReturntime());
+//            borrowVO.setBook(bookMapper.getBookById(a.getIsbn()));
+//            return borrowVO;
+//        }).collect(Collectors.toList());
+        return Res.okRes("success",collect1);
     }
 }

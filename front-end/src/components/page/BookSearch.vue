@@ -47,8 +47,11 @@
 				<div>
 					numinstock: {{detailinfo.numinstock}}
 				</div>
+				<div>
+					Comment:
+				</div>
 				<div class="comment">
-					<div v-for="item in items" :key="item.id">
+					<div v-for="item in comment">
 						{{ item }}
 					</div>
 				</div>
@@ -83,7 +86,10 @@
 					borrowtime:'',
 					returntime:'',
 					isbn:''
-				}
+				},
+				comment:["very good",
+					"good",
+					"I like this book"]
 			};
 		},
 		created() {
@@ -114,8 +120,8 @@
 			},
 			borrow(data){
 				var aData = new Date();
-				this.borrowinfo.borrowtime=aData.getFullYear() + "-" + aData.getMonth()  + "-" + aData.getDate();
-				this.borrowinfo.returntime=aData.getFullYear() + "-" + (aData.getMonth() + 1) + "-" + aData.getDate();
+				this.borrowinfo.borrowtime=aData.getFullYear() + "-" + (aData.getMonth() + 1)  + "-" + aData.getDate();
+				this.borrowinfo.returntime=aData.getFullYear() + "-" + (aData.getMonth() + 1) + "-" + (aData.getDate()+14);
 				this.borrowinfo.isbn=data.isbn
 				borrowBook(this.borrowinfo).then(res => {
 					console.log(res)

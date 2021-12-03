@@ -52,8 +52,11 @@
 				<div>
 					numinstock: {{detailinfo.numinstock}}
 				</div>
+				<div>
+					Comment:
+				</div>
 				<div class="comment">
-					<div v-for="item in items" :key="item.id">
+					<div v-for="item in comment">
 						{{ item }}
 					</div>
 				</div>
@@ -195,7 +198,10 @@
 				},
 				deleteinfo:{
 					isbn:''
-				}
+				},
+				comment:["very good",
+					"good",
+					"I like this book"]
 			};
 		},
 		created() {

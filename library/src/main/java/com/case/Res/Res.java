@@ -1,8 +1,6 @@
-package com.yswdqz.Res;
+package com.jxl.Res;
 
 import lombok.Data;
-
-import java.util.Objects;
 
 @Data
 public class Res {

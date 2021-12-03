@@ -7,8 +7,6 @@
 				<el-table-column prop="title" label="title"></el-table-column>
 				<el-table-column prop="publisher" label="publisher"></el-table-column>
 				<el-table-column prop="booktype" label="booktype"></el-table-column>
-				<el-table-column prop="borrowtime" label="borrowtime"></el-table-column>
-				<el-table-column prop="returntime" label="returntime"></el-table-column>
 				<el-table-column fixed="right" label="tool" width="70">
 					<template slot-scope="scope">
 						<el-button @click="handleClick(scope.row)" type="text" size="small">return</el-button>
@@ -39,7 +37,7 @@
 				tableData: [],
 				pageTotal: 1,
 				user: {
-					accountNumber: localStorage.getItem('ms_username')
+					accountnumber: localStorage.getItem('ms_username')
 				},
 				borrowinfo:{
 					isbn:''
@@ -52,15 +50,7 @@
 		methods: {
 			getData() {
 				getBorrow(this.user).then(res => {
-					this.tableData = [{
-						author: "Thomas H. Cormen",
-						isbn: "9780070131439",
-						title: "Introduction to\nAlgorithms",
-						publisher: "MIT Press",
-						booktype: "Computer Science",
-						borrowtime: "2021-09-13T16:00:00.000+00:00",
-						returntime: "2021-09-27T16:00:00.000+00:00"
-					}];
+					this.tableData = res.data
 					this.pageTotal = res.pageTotal;
 				});
 			},
