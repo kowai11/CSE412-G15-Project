@@ -20,11 +20,11 @@ This is a web-based application offers the service of searching book information
 
 ## Database Details
 
-###Schema
+### Schema
 
 
 
-###ER Diagram
+### ER Diagram
 
 ![Alt text](./img/ER.png)
 
