@@ -211,14 +211,15 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 - For "npm", you can first check whether you install it by input the command: "npm -v" in your terminal, if it show up the version, you don't need to install it again, else you can download the latest version of npm, on the command line, run the following command: "npm install -g npm"
 
 ### Ready to run
-- 1. In order to run it, you should firstly open the PostgreSQL using pgAdmin. Then open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
-- 2. Then open the HbuilderX to run the front-end application. Entering the front-end folder using cd command in terminal. Then run following commands.
+- 1. In order to run it, you should open the PostgreSQL using pgAdmin. 
+- 2. Open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
+- 3. Open the HbuilderX to run the front-end application. Entering the <em>front-end</em> folder using cd command in terminal. Then run following commands.
 ~~~~
 npm install(if doesn't work, try npm install --force)
 npm run serve
 ~~~~
-- 3. Now there should be a url link show in terminal which is the URL you will use to access our full application. It will be "http://localhost:8081"
-- 4. If you want to log in as an admin user, you need to redo the same steps but in folder admin
+- 4. Now there should be a url link show in terminal which is the URL you will use to access our full application. It should be "http://localhost:8081"
+- 5. If you want to log in as an admin user, you need to rerun these commands but in folder <em>admin</em>
 ~~~~
 npm install(if doesn't work, try npm install --force)
 npm run serve
