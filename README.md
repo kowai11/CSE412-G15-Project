@@ -218,10 +218,29 @@ npm run serve
 ![Alt text](./img/1.png)
 #### Booksearch Page
 1. Reader
-- At this page, you will see a list and a form of existing books. 
-- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
-- As a user, you can also borrow a book by clicking the borrow buttion at the most right side.
-![Alt text](./img/rsearch.jpg)
+- After you login you will navigate to the book search page. At this page, you will see a list and a form of existing books. 
+![Alt text](./img/2.png)
+- You can search a book by type the book title into the search bar
+![Alt text](./img/3.png)
+- You could see more information including ISBN number, author, title, publisher, book type, and number in stock by click "detail" on each row.
+![Alt text](./img/4.png)
+- You can also see your personal information, by click the "personal information" menu at left side.
+![Alt text](./img/5.png)
+- You can your return information, by click the "Bookreturn" menu at left side.
+![Alt text](./img/6.png)
+- As for a reader you can borrow a book. Here is the book list befor you borrow.
+![Alt text](./img/7.png)
+- After we borrow the book that isbn = 9780070131439, as you can see the numinstock changed from 10 to 9
+![Alt text](./img/8.png)
+- Then we view our return information that borrowed book was added.
+![Alt text](./img/9.png)
+- If we return the book that isbn = 9780070131439. After returned it will show a pop-ups。
+![Alt text](./img/10.png)
+- We can refresh the page to view the result, which the returned book will disappeared in the BookReturn list.
+![Alt text](./img/11.png)
+- When we back to the book list numinstock add back to 10.
+![Alt text](./img/12.png)
+
 
 2. Manager
 - At this page, you will see a list and a form of existing books. 
