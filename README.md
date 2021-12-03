@@ -1,6 +1,8 @@
 # CSE412-G15-Project
 
-User Manual for the CSE 412 Group Project.
+This is project for Group 15 in CSE 412 Fall 2021 Semester.
+
+![Alt text](./img/cover.jpg)
 
 ## Indtruoduction
 
