@@ -9,18 +9,44 @@ This is a web-based application offers the service of searching book information
 ## Contents
 
  - [Prerequisites](#Prerequisites)
+ - [Database Details](#Database Details)
  - [Installation](#Installation)
- - [Function](#Function)
+ - [Functionality](#Functionality)
 
 ## Prerequisites
 
  - PostgreSQL
  - Local server (such as HTTP Simple Server)
 
+## Database Details
+
+###Schema
+
+
+
+###ER Diagram
+
+![Alt text](./img/ER.png)
+
 ## Installation
 
+    1.
+    2.
+    3.
 
+## Functionality
+###Log-in and Sign-in Page
 
-## Function
+###Reader & manager Search
+1. Reader
+![Alt text](./img/rsearch.jpg)
+2. Manager
+![Alt text](./img/msearch.jpg)
 
+###Personal Information
 
+![Alt text](./img/pinfo.jpg)
+
+###Book Return
+
+![Alt text](./img/return.jpg)
