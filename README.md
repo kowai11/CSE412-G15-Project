@@ -212,14 +212,14 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 - 1.In order to run it, you should firstly open the PostgreSQL using pgAdmin. Then open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
 - 2.Then open the HbuilderX to run the front-end application. Entering the front-end folder using cd command in terminal. Then run following commands.
 - ~~~~
-- npm install(if doesn't work, try npm install --force)
-- npm run serve
+npm install(if doesn't work, try npm install --force)
+npm run serve
 - ~~~~
 - 3. Now there should be a url link show in terminal which is the URL you will use to access our full application. It will be "http://localhost:8081"
 - 4. If you want to log in as an admin user, you need to redo the same steps but in folder admin
 - ~~~~
-- npm install(if doesn't work, try npm install --force)
-- npm run serve
+npm install(if doesn't work, try npm install --force)
+npm run serve
 - ~~~~
 - 5. Now there should be anoterh URL link which should be "http://localhost:8082". This is used to log in as Admin user.
 - 6. You can switch between these two URLs at will, they will be both accessible.
