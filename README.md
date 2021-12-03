@@ -12,7 +12,6 @@ This is a web-based application offers the service of searching book information
  - [Database Details](#Database-Details)
  - [Installation](#Installation)
  - [Functionality](#Functionality)
- - [ER-to-Realational](#ER-to-Relational)
 
 ## Prerequisites
 
