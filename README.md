@@ -46,6 +46,7 @@ In order to create the database system in PostgreSQL, we need to transform them 
 
 #### Administrator Table
 
+~~~~sql
 CREATE TABLE Administrator (
 ID INTEGER NOT NULL,
 Name VARCHAR(20),
@@ -55,6 +56,8 @@ contactInfo VARCHAR(20),
 accountNumber VARCHAR(20),
 PRIMARY KEY (ID)
 );
+</p>
+~~~~
 
 #### Reader Table
 
