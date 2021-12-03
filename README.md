@@ -224,7 +224,7 @@ npm run serve
 ![Alt text](./img/3.png)
 - You could see more information including ISBN number, author, title, publisher, book type, and number in stock by click "detail" on each row.
 ![Alt text](./img/4.png)
-- You can also see your personal information, by click the "personal information" menu at left side.
+- You can also view your personal information, by click the "personal information" menu at left side.
 ![Alt text](./img/5.png)
 - You can your return information, by click the "Bookreturn" menu at left side.
 ![Alt text](./img/6.png)
@@ -243,18 +243,27 @@ npm run serve
 
 
 2. Manager
-- At this page, you will see a list and a form of existing books. 
-- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
-- As a user, you can also add/edit/delete a book by clicking the Add/edit/delete button at the most right side. And also, you can also click detail button to see the details of the book.
+- After you login you will navigate to the book search page. At this page, you will see a list and a form of existing books. 
+- The difference is that navigation Bar on the left is different with reader page.
+![Alt text](./img/13.png)
+- You can search a book by type the book title into the search bar, which is same with reader account.
+![Alt text](./img/23.png)
+- You could see more information including ISBN number, author, title, publisher, book type, and number in stock by click "detail" on each row.
+![Alt text](./img/15.png)
+- You can also view your personal information, by click the "personal information" menu at left side.
+![Alt text](./img/16.png)
+- As for an administrator, you can edit book, for example you can change the numinstock to 20 of the book that author is Jack.
+![Alt text](./img/17.png)
+- After confirm, the data will changed.
 ![Alt text](./img/18.png)
-
-#### Personal Information Page
-
-![Alt text](./img/pinfo.jpg)
-
-#### Book Return Page
-
-![Alt text](./img/return.jpg)
+- You can also add a book by type in all the information.
+![Alt text](./img/19.png)
+- We can add a book like this 
+![Alt text](./img/20.png)
+- After confirm you will see the change inside the book list.
+![Alt text](./img/21.png)
+- You can also perform the delete operation, to delete the book you just added, after delete, this book will disappeared
+![Alt text](./img/22.png)
 
 ## Project Developing Progress
 This project is developed during Fall 2021 semester. The whole process is divided into 3 different phases.
