@@ -1,6 +1,6 @@
 # CSE412-G15-Project
 
-This is project for Group 15 in CSE 412 Fall 2021 Semester.
+This is project of Group 15 in CSE 412 Fall 2021 Semester.
 
 ![Alt text](./img/cover.png)
 
