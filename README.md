@@ -9,7 +9,7 @@ This is a web-based application offers the service of searching book information
 ## Contents
 
  - [Prerequisites](#Prerequisites)
- - [Database Details](#Database Details)
+ - [Database Details](#Database-Details)
  - [Installation](#Installation)
  - [Functionality](#Functionality)
 
