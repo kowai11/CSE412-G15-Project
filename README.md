@@ -22,8 +22,6 @@ This is a web-based application offers the service of searching book information
 
 ### Schema
 
-
-
 ### ER Diagram
 
 ![Alt text](./img/ER.png)
