@@ -187,15 +187,14 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 - As a user, you can also borrow a book by clicking the borrow buttion at the most right side.
 ![Alt text](./img/rsearch.jpg)
 2. Manager
-![Alt text](./img/msearch.jpg)
+
 
 #### Personal Information
 
-![Alt text](./img/pinfo.jpg)
 
 #### Book Return
 
-![Alt text](./img/return.jpg)
+
 
 ## Development&Running Environment
 ### Setting up environment
