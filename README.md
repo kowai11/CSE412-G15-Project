@@ -210,9 +210,10 @@ npm run serve
 ### Functionality
 
 #### Log-in
-- On this page, you can sign-in as a reaser user at "http://localhost:8081". Entering the reader account number and the corresponding password, then clicking Login button. This will navigate you to the reader version interface.
+- On this page, you can sign-in as a reader user at "http://localhost:8081". Entering the reader account number and the corresponding password, then clicking Login button. This will navigate you to the reader version interface.
+![Alt text](./img/1.jpg)
 - Or you can sign-in as an admin user at "http://localhost:8082". Entering the admin account number and the corresponding password, then clicking Login button. This will navigate you to the admin version interface.
-
+![Alt text](./img/1.jpg)
 #### Booksearch Page
 1. Reader
 - At this page, you will see a list and a form of existing books. 
@@ -232,20 +233,20 @@ npm run serve
 ![Alt text](./img/return.jpg)
 
 ## Project Developing Progress
-This project is developed during Fall 2021 semester. The whole process is divided into 3 different phases.
+- This project is developed during Fall 2021 semester. The whole process is divided into 3 different phases.
 ### Phase1-Proposal
-From 08/23 to 09/15
-- We defined our detailed application requirements. 
-- We designed the ER diagram. 
-- We defined our implementation plans.
-- We gave a video presentation.
+- From 08/23 to 09/15
+- 1. We defined our detailed application requirements. 
+- 2. We designed the ER diagram. 
+- 3. We defined our implementation plans.
+- 4. We gave a video presentation.
 ### Phase2-Project Midterm Report
-From 09/20 to 10/27
-- Transform the ER diagram into a relational model using SQL data definition language (DDL).
-- Fill in the database with data.
-- SQL Queries: Prepare examples of SQL queries that cover the application description.
+- From 09/20 to 10/27
+- 1. Transform the ER diagram into a relational model using SQL data definition language (DDL).
+- 2. Fill in the database with data.
+- 3. SQL Queries: Prepare examples of SQL queries that cover the application description.
 ### Phase3-Project Final Report
-From 11/01 to 12/2
-- Deliverd the the first version of our web-based full stack app including front-end and back-end.
-- Offered the project description and user manual.
-- Gave a video demontration of our application.
+- From 11/01 to 12/2
+- 1. Deliverd the the first version of our web-based full stack app including front-end and back-end.
+- 2. Offered the project description and user manual.
+- 3. Gave a video demontration of our application.
