@@ -2,7 +2,7 @@
 
 This is project for Group 15 in CSE 412 Fall 2021 Semester.
 
-![Alt text](./img/cover.jpg)
+![Alt text](./img/cover.png)
 
 ## Indtruoduction
 
