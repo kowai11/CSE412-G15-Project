@@ -11,6 +11,7 @@ This is a web-based application offers the service of searching book information
  - [Prerequisites](#Prerequisites)
  - [Database Details](#Database-Details)
  - [User Manual](#User-Manual)
+ - [Development Environment](#Development-Environment)
 
 ## Prerequisites
 
@@ -165,9 +166,9 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 
 #### Reader & manager homepage
 1. Reader
--t this page, you will see a list and a form of existing books. 
--ou could see the information including ISBN number, author, title, publisher, book type, and number in stock.
--s a user, you can also borrow a book by clicking the borrow buttion at the most right side.
+- At this page, you will see a list and a form of existing books. 
+- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
+- As a user, you can also borrow a book by clicking the borrow buttion at the most right side.
 ![Alt text](./img/rsearch.jpg)
 2. Manager
 ![Alt text](./img/msearch.jpg)
@@ -179,3 +180,5 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 #### Book Return
 
 ![Alt text](./img/return.jpg)
+
+## Development Environment
