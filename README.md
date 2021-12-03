@@ -11,7 +11,7 @@ This is a web-based application offers the service of searching book information
  - [Prerequisites](#Prerequisites)
  - [Database Details](#Database-Details)
  - [User Manual](#User-Manual)
- - [Development/Running Environment](#Development/Running-Environment)
+ - [Development&Running Environment](#Development&Running-Environment)
 
 ## Prerequisites
 
@@ -197,7 +197,7 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 
 ![Alt text](./img/return.jpg)
 
-## Development/Running Environment
+## Development&Running Environment
 - About our project, the tools that we used for development include: "IDEA", "HBuilder X", "java", "Node.js" and "npm".
 - For "IDEA", if you haven't install it yet, you can download from this link: https://www.jetbrains.com/idea/download/#section=windows
 
@@ -217,7 +217,7 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 - ~~~~
 - 3. Now there should be a url link show in terminal which is the URL you will use to access our full application. It will be "http://localhost:8081"
 - 4. If you want to log in as an admin user, you need to redo the same steps but in folder admin
-- -~~~~
+- ~~~~
 - npm install(if doesn't work, try npm install --force)
 - npm run serve
 - ~~~~
