@@ -12,6 +12,7 @@ This is a web-based application offers the service of searching book information
  - [Database Details](#Database-Details)
  - [Installation](#Installation)
  - [Functionality](#Functionality)
+ - [ER-to-Realational](#ER-to-Relational)
 
 ## Prerequisites
 
@@ -30,6 +31,117 @@ For this project, we create the database on local server. We also provide the co
 ### ER Diagram
 
 ![Alt text](./img/ER.png)
+
+### ER-to-Realational
+
+- Administrator: (ID, Name, Gender, password, contactInfo, accountNumber)
+- Reader: (ID, numOfBookCanBorrow, Name, Gender, password, contactInfo, accountNumber)
+- updateBook: (ID, ISBN)
+- Borrow: (ID, ISBN, BorrowTime, ReturnTime)
+- Book: (ISBN, author, Title, publisher, type, numInStock)
+- BookComment: (commentID, rate, content, postTime)
+- Post: (commentID, ID)
+- HasA: (commentID, ISBN)
+
+In order to create the database system in PostgreSQL, we need to transform them to following SQL DDL:
+
+#### Administrator Table
+
+CREATE TABLE Administrator (
+ID INTEGER NOT NULL,
+Name VARCHAR(20),
+Gender CHAR(1),
+password VARCHAR(20),
+contactInfo VARCHAR(20),
+accountNumber VARCHAR(20),
+PRIMARY KEY (ID)
+);
+
+#### Reader Table
+
+CREATE TABLE Reader (
+ID INTEGER NOT NULL,
+Name VARCHAR(20),
+Gender CHAR(1),
+password VARCHAR(20),
+contactInfo VARCHAR(20),
+accountNumber VARCHAR(20),
+numOfBookCanBorrow INTEGER,
+PRIMARY KEY (ID)
+);
+
+#### Book Table
+
+CREATE TABLE Book(
+ISBN CHAR(13),
+author VARCHAR(30),
+Title VARCHAR(100),
+publisher VARCHAR(100),
+bookType VARCHAR(100),
+numInStock INTEGER,
+PRIMARY KEY (ISBN)
+);
+
+#### updateBook Table
+
+CREATE TABLE updateBook (
+ID INTEGER NOT NULL,
+ISBN CHAR(13),
+PRIMARY KEY (ID, ISBN),
+FOREIGN KEY (ID)
+REFERENCES Administrator ON DELETE CASCADE,
+FOREIGN KEY (ISBN)
+REFERENCES Book ON DELETE CASCADE
+);
+
+#### Borrow Table
+
+CREATE TABLE Borrow(
+ID INTEGER NOT NULL,
+ISBN CHAR(13),
+BorrowTime DATE,
+ReturnTime DATE,
+PRIMARY KEY (ID, ISBN),
+FOREIGN KEY(ID)
+REFERENCES Reader ON DELETE CASCADE,
+FOREIGN KEY (ISBN)
+REFERENCES Book ON DELETE CASCADE
+);
+
+
+#### bookComment Table
+
+CREATE TABLE bookComment(
+commentID INTEGER NOT NULL,
+rate INTEGER,
+content VARCHAR(300),
+postTime DATE,
+PRIMARY KEY(commentID)
+);
+
+#### Post Table
+
+CREATE TABLE Post(
+commentID INTEGER NOT NULL,
+ID INTEGER NOT NULL,
+PRIMARY KEY (commentID),
+FOREIGN KEY (commentID)
+REFERENCES bookComment ON DELETE CASCADE,
+FOREIGN KEY (ID)
+REFERENCES Reader ON DELETE CASCADE
+);
+
+#### HasA Table
+
+CREATE TABLE HasA(
+commentID INTEGER NOT NULL,
+ISBN CHAR(13),
+PRIMARY KEY(commentID),
+FOREIGN KEY(commentID)
+REFERENCES bookComment ON DELETE CASCADE,
+FOREIGN KEY(ISBN)
+REFERENCES Book ON DELETE CASCADE
+);
 
 ## Installation
 
