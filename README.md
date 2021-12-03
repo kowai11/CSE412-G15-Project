@@ -35,7 +35,7 @@ This is a web-based application offers the service of searching book information
     3.
 
 ## Functionality
-### Log-in and Sign-in Page
+### Log-in & Sign-in Page
 
 ### Reader & manager Search
 1. Reader
