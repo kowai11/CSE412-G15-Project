@@ -10,16 +10,18 @@ This is a web-based application offers the service of searching book information
 
  - [Prerequisites](#Prerequisites)
  - [Database Details](#Database-Details)
- - [Installation](#Installation)
- - [Functionality](#Functionality)
+ - [User Manual](#User-Manual)
 
 ## Prerequisites
 
  - PostgreSQL
  - IDEA
  - HbuilderX
- - Java(SpringBoot)
- - vue2
+ - Java1.8
+ - SpringBoot
+ - Vue2
+ - Node.js
+ - npm
  - Local server (such as HTTP Simple Server)
 
 ## Database Details
@@ -157,25 +159,20 @@ REFERENCES Book ON DELETE CASCADE
 );
 ~~~~
 
-## Installation
+## User Manual
+### Functionality
+#### Log-in & Sign-in Page
 
-    1.
-    2.
-    3.
-
-## Functionality
-### Log-in & Sign-in Page
-
-### Reader & manager Search
+#### Reader & manager Search
 1. Reader
 ![Alt text](./img/rsearch.jpg)
 2. Manager
 ![Alt text](./img/msearch.jpg)
 
-### Personal Information
+#### Personal Information
 
 ![Alt text](./img/pinfo.jpg)
 
-### Book Return
+#### Book Return
 
 ![Alt text](./img/return.jpg)
