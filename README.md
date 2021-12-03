@@ -211,9 +211,9 @@ npm run serve
 
 #### Log-in
 - On this page, you can sign-in as a reader user at "http://localhost:8081". Entering the reader account number and the corresponding password, then clicking Login button. This will navigate you to the reader version interface.
-![Alt text](./img/1.jpg)
+![Alt text](./img/1.png)
 - Or you can sign-in as an admin user at "http://localhost:8082". Entering the admin account number and the corresponding password, then clicking Login button. This will navigate you to the admin version interface.
-![Alt text](./img/1.jpg)
+![Alt text](./img/1.png)
 #### Booksearch Page
 1. Reader
 - At this page, you will see a list and a form of existing books. 
