@@ -224,7 +224,10 @@ npm run serve
 ![Alt text](./img/rsearch.jpg)
 
 2. Manager
-![Alt text](./img/msearch.jpg)
+- At this page, you will see a list and a form of existing books. 
+- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
+- As a user, you can also add/edit/delete a book by clicking the Add/edit/delete button at the most right side. And also, you can also click detail button to see the details of the book.
+![Alt text](./img/18.jpg)
 
 #### Personal Information Page
 
