@@ -14,8 +14,8 @@ This is a web-based application offers the service of searching book information
 
 ## Prerequisites
 
-PostgreSQL
-Local server (such as HTTP Simple Server)
+ - PostgreSQL
+ - Local server (such as HTTP Simple Server)
 
 ## Installation
 
