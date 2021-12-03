@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #CSE412-G15-Project
 User Manual for the CSE 412 Group Project.
 
