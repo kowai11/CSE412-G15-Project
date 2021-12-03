@@ -246,4 +246,6 @@ npm run serve
 - 3. SQL Queries: Prepare examples of SQL queries that cover the application description.
 ### Phase3-Project Final Report
 - From 11/01 to 12/2
-- 1. Finished the 
+- 1. Deliverd the the first version of our web-based full stack app including front-end and back-end.
+- 2. Offered the project description and user manual.
+- 3. Gave a video demontration of our application.
