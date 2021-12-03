@@ -56,11 +56,11 @@ contactInfo VARCHAR(20),
 accountNumber VARCHAR(20),
 PRIMARY KEY (ID)
 );
-</p>
 ~~~~
 
 #### Reader Table
 
+~~~~sql
 CREATE TABLE Reader (
 ID INTEGER NOT NULL,
 Name VARCHAR(20),
@@ -71,9 +71,11 @@ accountNumber VARCHAR(20),
 numOfBookCanBorrow INTEGER,
 PRIMARY KEY (ID)
 );
+~~~~
 
 #### Book Table
 
+~~~~sql
 CREATE TABLE Book(
 ISBN CHAR(13),
 author VARCHAR(30),
@@ -83,9 +85,11 @@ bookType VARCHAR(100),
 numInStock INTEGER,
 PRIMARY KEY (ISBN)
 );
+~~~~
 
 #### updateBook Table
 
+~~~~sql
 CREATE TABLE updateBook (
 ID INTEGER NOT NULL,
 ISBN CHAR(13),
@@ -95,9 +99,11 @@ REFERENCES Administrator ON DELETE CASCADE,
 FOREIGN KEY (ISBN)
 REFERENCES Book ON DELETE CASCADE
 );
+~~~~
 
 #### Borrow Table
 
+~~~~sql
 CREATE TABLE Borrow(
 ID INTEGER NOT NULL,
 ISBN CHAR(13),
@@ -109,10 +115,11 @@ REFERENCES Reader ON DELETE CASCADE,
 FOREIGN KEY (ISBN)
 REFERENCES Book ON DELETE CASCADE
 );
-
+~~~~
 
 #### bookComment Table
 
+~~~~sql
 CREATE TABLE bookComment(
 commentID INTEGER NOT NULL,
 rate INTEGER,
@@ -120,9 +127,11 @@ content VARCHAR(300),
 postTime DATE,
 PRIMARY KEY(commentID)
 );
+~~~~
 
 #### Post Table
 
+~~~~sql
 CREATE TABLE Post(
 commentID INTEGER NOT NULL,
 ID INTEGER NOT NULL,
@@ -132,9 +141,11 @@ REFERENCES bookComment ON DELETE CASCADE,
 FOREIGN KEY (ID)
 REFERENCES Reader ON DELETE CASCADE
 );
+~~~~
 
 #### HasA Table
 
+~~~~sql
 CREATE TABLE HasA(
 commentID INTEGER NOT NULL,
 ISBN CHAR(13),
@@ -144,6 +155,7 @@ REFERENCES bookComment ON DELETE CASCADE,
 FOREIGN KEY(ISBN)
 REFERENCES Book ON DELETE CASCADE
 );
+~~~~
 
 ## Installation
 
