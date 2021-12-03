@@ -198,6 +198,7 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 ![Alt text](./img/return.jpg)
 
 ## Development&Running Environment
+### Setting up environment
 - About our project, the tools that we used for development include: "IDEA", "HBuilder X", "java", "Node.js" and "npm".
 - For "IDEA", if you haven't install it yet, you can download from this link: https://www.jetbrains.com/idea/download/#section=windows
 
@@ -209,8 +210,9 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 
 - For "npm", you can first check whether you install it by input the command: "npm -v" in your terminal, if it show up the version, you don't need to install it again, else you can download the latest version of npm, on the command line, run the following command: "npm install -g npm"
 
-- 1.In order to run it, you should firstly open the PostgreSQL using pgAdmin. Then open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
-- 2.Then open the HbuilderX to run the front-end application. Entering the front-end folder using cd command in terminal. Then run following commands.
+### Ready to run
+- 1. In order to run it, you should firstly open the PostgreSQL using pgAdmin. Then open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
+- 2. Then open the HbuilderX to run the front-end application. Entering the front-end folder using cd command in terminal. Then run following commands.
 ~~~~
 npm install(if doesn't work, try npm install --force)
 npm run serve
