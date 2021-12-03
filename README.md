@@ -9,8 +9,8 @@ This is a web-based application offers the service of searching book information
 ## Contents
 
  - [Prerequisites](#Prerequisites)
- - [Installation](Installation)
- - [Function](Function)
+ - [Installation](#Installation)
+ - [Function](#Function)
 
 ## Prerequisites
 
