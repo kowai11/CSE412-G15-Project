@@ -22,7 +22,6 @@ This is a web-based application offers the service of searching book information
  - Vue2
  - Node.js
  - npm
- - Local server (such as HTTP Simple Server)
 
 ## Database Details
 ### Schema
@@ -161,10 +160,14 @@ REFERENCES Book ON DELETE CASCADE
 
 ## User Manual
 ### Functionality
-#### Log-in & Sign-in Page
+#### Log-in & Sign-in
+On this page, you will see two options, one is Log-in, another is Sign-in. You can sign-in as a user. After sign-in, you should be able to lg in with the information you just filled in. This will navigate you to the reader version interface, which doesn't have perssion to edit the information. If you log in as a manager, you should be able have the permission to edit the books and comments.
 
-#### Reader & manager Search
+#### Reader & manager homepage
 1. Reader
+-t this page, you will see a list and a form of existing books. 
+-ou could see the information including ISBN number, author, title, publisher, book type, and number in stock.
+-s a user, you can also borrow a book by clicking the borrow buttion at the most right side.
 ![Alt text](./img/rsearch.jpg)
 2. Manager
 ![Alt text](./img/msearch.jpg)
