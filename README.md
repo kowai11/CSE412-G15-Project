@@ -12,6 +12,7 @@ This is a web-based application offers the service of searching book information
  - [Database Details](#Database-Details)
  - [User Manual](#User-Manual)
  - [Development&Running Environment](#developmentrunning-environment)
+ - [Project Developing Progress](#Project-Developing-Progress)
 
 ## Prerequisites
 
@@ -160,7 +161,8 @@ REFERENCES Book ON DELETE CASCADE
 ~~~~
 
 ## User Manual
-### Installation
+
+### Installation Database
 
 1. Download all files in our project
 2. Create a Postgres database
@@ -173,31 +175,10 @@ REFERENCES Book ON DELETE CASCADE
 
    ![Alt text](./img/step2.jpg)
 7. Click restore
-8. 
 
+### Development&Running Environment
 
-### Functionality
-#### Log-in & Sign-in
-On this page, you will see two options, one is Log-in, another is Sign-in. You can sign-in as a user. After sign-in, you should be able to lg in with the information you just filled in. This will navigate you to the reader version interface, which doesn't have perssion to edit the information. If you log in as a manager, you should be able have the permission to edit the books and comments.
-
-#### Reader & manager homepage
-1. Reader
-- At this page, you will see a list and a form of existing books. 
-- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
-- As a user, you can also borrow a book by clicking the borrow buttion at the most right side.
-![Alt text](./img/rsearch.jpg)
-2. Manager
-
-
-#### Personal Information
-
-
-#### Book Return
-
-
-
-## Development&Running Environment
-### Setting up environment
+#### Setting up environment
 - About our project, the tools that we used for development include: "IDEA", "HBuilder X", "java", "Node.js" and "npm".
 - For "IDEA", if you haven't install it yet, you can download from this link: https://www.jetbrains.com/idea/download/#section=windows
 
@@ -209,7 +190,7 @@ On this page, you will see two options, one is Log-in, another is Sign-in. You c
 
 - For "npm", you can first check whether you install it by input the command: "npm -v" in your terminal, if it show up the version, you don't need to install it again, else you can download the latest version of npm, on the command line, run the following command: "npm install -g npm"
 
-### Ready to run
+#### Ready to run
 - 1. In order to run it, you should open the PostgreSQL using pgAdmin. 
 - 2. Open the IDEA, run the back-end application which is the folder named libarary. If you can't run successfully, please check and make sure you have change it to spring boot in configuration. 
 - 3. Open the HbuilderX to run the front-end application. Entering the <em>front-end</em> folder using cd command in terminal. Then run following commands.
@@ -225,3 +206,44 @@ npm run serve
 ~~~~
 - 5. Now there should be anoterh URL link which should be "http://localhost:8082". This is used to log in as Admin user.
 - 6. You can switch between these two URLs at will, they will be both accessible.
+
+### Functionality
+
+#### Log-in
+- On this page, you can sign-in as a reaser user at "http://localhost:8081". Entering the reader account number and the corresponding password, then clicking Login button. This will navigate you to the reader version interface.
+- Or you can sign-in as an admin user at "http://localhost:8082". Entering the admin account number and the corresponding password, then clicking Login button. This will navigate you to the admin version interface.
+
+#### Booksearch Page
+1. Reader
+- At this page, you will see a list and a form of existing books. 
+- You could see the information including ISBN number, author, title, publisher, book type, and number in stock.
+- As a user, you can also borrow a book by clicking the borrow buttion at the most right side.
+![Alt text](./img/rsearch.jpg)
+
+2. Manager
+![Alt text](./img/msearch.jpg)
+
+#### Personal Information Page
+
+![Alt text](./img/pinfo.jpg)
+
+#### Book Return Page
+
+![Alt text](./img/return.jpg)
+
+## Project Developing Progress
+- This project is developed during Fall 2021 semester. The whole process is divided into 3 different phases.
+### Phase1-Proposal
+- From 08/23 to 09/15
+- 1. We defined our detailed application requirements. 
+- 2. We designed the ER diagram. 
+- 3. We defined our implementation plans.
+- 4. We gave a video presentation.
+### Phase2-Project Midterm Report
+- From 09/20 to 10/27
+- 1. Transform the ER diagram into a relational model using SQL data definition language (DDL).
+- 2. Fill in the database with data.
+- 3. SQL Queries: Prepare examples of SQL queries that cover the application description.
+### Phase3-Project Final Report
+- From 11/01 to 12/2
+- 1. Finished the 
