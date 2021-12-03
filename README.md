@@ -16,11 +16,16 @@ This is a web-based application offers the service of searching book information
 ## Prerequisites
 
  - PostgreSQL
+ - IDEA
+ - HbuilderX
+ - Java(SpringBoot)
+ - vue2
  - Local server (such as HTTP Simple Server)
 
 ## Database Details
-
 ### Schema
+
+For this project, we create the database on local server. We also provide the code and tutorial for users to build the database on their own local machine. The relational database model contains 4 entities. Because we need to implement some basic features of a system in a library, we need the four entities to interact with each other. They are Administrator, Reader, Book, and BookComment.
 
 ### ER Diagram
 
