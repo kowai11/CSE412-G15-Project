@@ -11,7 +11,7 @@ This is a web-based application offers the service of searching book information
  - [Prerequisites](#Prerequisites)
  - [Database Details](#Database-Details)
  - [User Manual](#User-Manual)
- - [Development&Running Environment](#Development&Running-Environment)
+ - [Development&Running Environment](#developmentrunning-environment)
 
 ## Prerequisites
 
