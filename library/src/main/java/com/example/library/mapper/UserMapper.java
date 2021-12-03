@@ -38,4 +38,10 @@ public interface UserMapper {
 
     @Select("select * from borrow where id = #{id}")
     List<Borrow> getBorrowBooks(Integer id);
+
+    @Select("select id from reader where accountnumber = #{accountnumber}")
+    Integer getIdByAccount(String accountnumber);
+
+    @Select("select id from administrator where accountnumber = #{accountnumber}")
+    Integer getIdByAccountAdmin(String accountnumber);
 }

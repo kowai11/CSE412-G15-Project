@@ -160,6 +160,22 @@ REFERENCES Book ON DELETE CASCADE
 ~~~~
 
 ## User Manual
+### Installation
+
+1. Download all files in our project
+2. Create a Postgres database
+3. Open pgAdmin(the example is given based on pgAdmin4)
+4. Double right click the database you created
+5. Click Restore
+
+   ![Alt text](./img/step1.jpg)
+6. Select the location where you download the files, a database backup file named LMS is in database folder
+
+   ![Alt text](./img/step2.jpg)
+7. Click restore
+8. 
+
+
 ### Functionality
 #### Log-in & Sign-in
 On this page, you will see two options, one is Log-in, another is Sign-in. You can sign-in as a user. After sign-in, you should be able to lg in with the information you just filled in. This will navigate you to the reader version interface, which doesn't have perssion to edit the information. If you log in as a manager, you should be able have the permission to edit the books and comments.

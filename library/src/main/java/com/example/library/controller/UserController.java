@@ -48,20 +48,24 @@ public class UserController {
     }
     @CrossOrigin
     @GetMapping("/readerDetail")
-    public Res userDetail(Integer id){
-        Reader readerById = userMapper.getReaderById(id);
+    public Res userDetail(String accountnumber){
+        Integer idByAccount = userMapper.getIdByAccount(accountnumber);
+        Reader readerById = userMapper.getReaderById(idByAccount);
         return Res.okRes("success",readerById);
     }
     @CrossOrigin
     @GetMapping("/adminDetail")
-    public Res adminDetail(Integer id){
-        Administrator adminById = userMapper.getAdminById(id);
+    public Res adminDetail(String accountnumber){
+        Integer idByAccountAdmin = userMapper.getIdByAccountAdmin(accountnumber);
+
+        Administrator adminById = userMapper.getAdminById(idByAccountAdmin);
         return Res.okRes("success",adminById);
     }
     @CrossOrigin
     @GetMapping("/getBorrow")
-    public Res getBorrow(Integer id){
-        List<Borrow> borrowBooks = userMapper.getBorrowBooks(id);
+    public Res getBorrow(String accountnumber){
+        Integer idByAccount = userMapper.getIdByAccount(accountnumber);
+        List<Borrow> borrowBooks = userMapper.getBorrowBooks(idByAccount);
         List<BorrowVO> collect = borrowBooks.stream().map((a) -> {
             BorrowVO borrowVO = new BorrowVO();
             borrowVO.setBorrowtime(a.getBorrowtime());

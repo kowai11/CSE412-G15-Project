@@ -3,6 +3,8 @@ package com.example.library.controller;
 import com.example.library.mapper.BookCommmentMapper;
 import com.example.library.mapper.HasaMapper;
 import com.example.library.model.BookCommentVO;
+import com.example.library.model.Bookcomment;
+import com.example.library.model.Hasa;
 import com.example.library.res.Res;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/bookComment")
@@ -34,5 +38,16 @@ public class BookCommentController {
         }
 
         return Res.noRes("false",null);
+    }
+
+    @CrossOrigin
+    @GetMapping("/get")
+    public Res get(String isbn){
+        List<Hasa> hasaByIsbn = hasaMapper.getHasaByIsbn(isbn);
+        List<Bookcomment> collect = hasaByIsbn.stream().map((a) -> {
+            return bookCommmentMapper.getById(a.getCommentId());
+
+        }).collect(Collectors.toList());
+        return Res.okRes("success",collect);
     }
 }

@@ -46,7 +46,6 @@ public class BookController {
         }
         Integer integer = bookMapper.deleteBook(isbn);
 
-        updateBookMapper.insert(AdminUser.administrator.getId(),isbn);
         return integer>0?Res.okRes("success",null):Res.noRes("false",null);
     }
     @CrossOrigin
@@ -84,6 +83,7 @@ public class BookController {
             Integer insert = borrowMapper.insert(AdminUser.reader.getId(), borrowtime1, returntime1, isbn);
 
             bookById.setNuminstock(bookById.getNuminstock()-1);
+            bookMapper.updateBook(bookById);
             return insert>0? Res.okRes("success",null):Res.noRes("false",null);
         } catch (ParseException e) {
             e.printStackTrace();
